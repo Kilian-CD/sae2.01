@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>CheerpJ Java App Example</title>
+    <title>SAE 2.01</title>
     <script src="https://cjrtnc.leaningtech.com/4.3/loader.js"></script>
   </head>
   <body>
@@ -10,7 +10,12 @@
       (async function () {
         await cheerpjInit({version: 11});
         cheerpjCreateDisplay(1920, 1080);
-        await cheerpjRunJar("sae-fete-lumiere.jar");
+        let currentPath = window.location.pathname;
+        if (!currentPath.endsWith('/')) {
+          currentPath = currentPath.substring(0, currentPath.lastIndexOf('/') + 1);
+        }
+        const jarPath = `/app${currentPath}sae-fete-lumiere.jar`;
+        await cheerpjRunJar(jarPath);
       })();
     </script>
   </body>
