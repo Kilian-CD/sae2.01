@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="sae-fete-lumière:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/sae_fete_lumière_jar</output-path>
+    <root id="archive" name="sae-fete-lumière.jar">
+      <element id="module-output" name="sae-fete-lumière" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/jxmapviewer2-2.6.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
